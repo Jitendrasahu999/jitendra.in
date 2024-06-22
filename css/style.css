@@ -1186,3 +1186,4 @@ header.header-white .navbar .navbar-nav .nav-item a:hover, header.header-white .
 .owl-carousel.arrow-1 .owl-nav .owl-prev { left: 0; display: inline-grid; }
 .owl-carousel.arrow-1 .owl-nav .owl-next { right: 0; display: inline-grid; }
 .owl-carousel.arrow-1 .owl-stage-outer { overflow: hidden; }
+.txt-clr{color: white;}
