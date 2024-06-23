@@ -190,8 +190,9 @@ function countdown1() {
         offset: -8,
         day: 'Day',
         days: 'Days'
-    }, function() {
-        alert('Done!');
+    }, 
+    function() {
+        //alert('Done!');
     });
 }
 
