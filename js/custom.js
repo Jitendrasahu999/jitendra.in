@@ -399,6 +399,14 @@ function wowanimation() {
     wow.init();
 }
 
+/*************************
+Disable Right Click
+*************************/
+function disableRightClick(){
+     document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+ }
 
 /*************************
 Contact from
@@ -465,7 +473,8 @@ $(document).ready(function() {
     countdown1(),
     widget(),
     screensilder(),
-    counter();
+    counter(),
+    disableRightClick();
 });
 
 
