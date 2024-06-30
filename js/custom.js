@@ -473,8 +473,8 @@ $(document).ready(function() {
     countdown1(),
     widget(),
     screensilder(),
-    counter();
-   // disableRightClick();
+    counter(),
+   disableRightClick();
 });
 
 
