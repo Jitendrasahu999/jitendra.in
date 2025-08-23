@@ -225,7 +225,7 @@ label { font-size: 15px; font-weight: 400; color: #aaaaaa; }
 Section padding 
 ----------------*/
 
-.overview-block-ptb { padding: 100px 0; }
+.overview-block-ptb { padding: 60px 0; }
 .overview-block-pt { padding: 100px 0 0; }
 .overview-block-pb { padding: 0 0 100px; }
 
@@ -296,6 +296,7 @@ Padding top
 .iq-pt-80 { padding-top: 80px; }
 .iq-pt-90 { padding-top: 90px; }
 .iq-pt-100 { padding-top: 100px; }
+.iq-pt-200 { padding-top: 150px; }
 
 /*----------------
 Padding Bottom 
@@ -502,6 +503,7 @@ Margin Right
 .grey-bg { background: #f5f7fb; }
 .blue-bg { background: #4ac4f3; }
 .dark-bg { background: #222222; }
+.light-yellow-bg{background: #fffcf3;}
 
 /*---------------------------------------------------------------------
                              BG Effect
@@ -1191,6 +1193,18 @@ header.header-white .navbar .navbar-nav .nav-item a:hover, header.header-white .
 .mrgn-lf-12{margin-left: 12px;}
 .rounded-image {border-radius: 14px;}
 .bdr-img{border: solid lightgray 1px;}
+.bg-color-ab{background-color: #fffcf0;}
+
+.card-div {
+  background: #fff;
+  border-radius: 20px;
+  padding: 0px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15), 
+              0 4px 6px rgba(0, 0, 0, 0.10);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pd-20{padding: 30px;}
 
 
 
