@@ -408,53 +408,42 @@ function disableRightClick(){
         });
  }
 
-/*************************
-Contact from
-*************************/
-function contactfrom() {
-    $('#contact').submit(function(e) {
-        var flag = 0;
-        e.preventDefault(); // Prevent Default Submission
-        $('.require').each(function() {
-            if ($.trim($(this).val()) == '') {
-                $(this).css("border", "1px solid red");
-                e.preventDefault(); // Prevent Default Submission
-                flag = 1;
-            } else {
-                $(this).css("border", "1px solid grey");
-                flag = 0;
-            }
-        });
+(function () {
+  emailjs.init({ publicKey: 'ZBasXTcpMWZl74At0' });
+})();
 
+async function contactForm(event) {
+  event.preventDefault();
+  const form   = document.getElementById('contact-form');
+  const status = document.getElementById('status');
+  const btn    = document.querySelector('#contact-form button');
 
-        if ($('.g-recaptcha').length > 0) {
-            if (grecaptcha.getResponse() == "") {
-                flag = 1;
-                alert('Please verify Recaptch');
+  if (!form) return;
+  if (!form.checkValidity()) {
+    status.textContent = "⚠️ Please fill out all required fields correctly.";
+    form.reportValidity();
+    return;
+  }
 
-            } else {
-                flag = 0;
-            }
-        }
+  status.textContent = '';
+  btn.disabled = true;
+  btn.textContent = 'Sending…';
 
-        if (flag == 0) {
-            $.ajax({
-                    url: 'php/contact-form.php',
-                    type: 'POST',
-                    data: $("#contact").serialize() // it will serialize the form data
-                })
-                .done(function(data) {
-                    $("#success").show();
-                    $('#contact')[0].reset();
-                })
-                .fail(function() {
-                    alert('Ajax Submit Failed ...');
-                });
-        }
-
-    });
+  try {
+    await emailjs.sendForm('service_8ybfh8u', 'template_cuet6l8', '#contact-form');
+    status.textContent = '✅ Message sent successfully!';
+    form.reset();
+    history.replaceState(null, '', location.pathname + location.search);
+  } catch (err) {
+    console.error('EmailJS error:', err);
+    status.textContent = '❌ Failed to send message.';
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Send Message';
+  }
 }
 
+document.getElementById('contact-form').addEventListener('submit', contactForm);
 
 /*************************
 All function are called here 
@@ -479,7 +468,5 @@ $(document).ready(function() {
 
 
 $(window).on('load', function() {
-    contactfrom(),
     wowanimation();
-
 });

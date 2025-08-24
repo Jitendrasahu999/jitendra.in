@@ -1180,27 +1180,22 @@
                         <div class="iq-get-in card-div pd-20">
                             <h4 class="iq-tw-7 iq-mb-20">Get in Touch</h4>
                             <div id="formmessage">Success/Error Message Goes Here !</div>
-                            <form id="contact" method="post">
+                            <form method="post" id="contact-form">
                                 <div class="contact-form">
                                     <div class="section-field">
-                                        <input class="require" id="contact_name" type="text" placeholder="Name*" name="name">
+                                        <input class="require" id="name" type="text" placeholder="Name*" name="name" required>
                                     </div>
                                     <div class="section-field">
-                                        <input class="require" id="contact_email" type="email" placeholder="Email*" name="email">
+                                        <input class="require" id="email" type="email" placeholder="Email*" name="email" required>
                                     </div>
                                     <div class="section-field">
-                                        <input class="require" id="contact_phone" type="text" placeholder="Phone*" name="phone">
+                                        <input class="require" id="phone" type="text" placeholder="Phone*" name="phone" required>
                                     </div>
                                     <div class="section-field textarea">
-                                        <textarea id="contact_message" class="input-message require" placeholder="Comment*" rows="5" name="message"></textarea>
+                                        <textarea id="message" class="input-message require" placeholder="Message*" rows="5" name="message" required></textarea>
                                     </div>
-                                    <button id="submit" name="submit" type="submit" value="Send" class="button iq-mt-15">Send Message</button>
-                                    <div class="alert alert-success alert-dismissible fade show" role="alert" id="success">
-                                        <strong>Thank You, Your message has been received.</strong>.
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                    </div>
+                                    <button type="submit" class="button iq-mt-15">Send Message</button>
+                                    <div id="status" class="status"></div>
                                 </div>
                             </form>
                         </div>
@@ -1249,7 +1244,7 @@
                             </div>
                             <div class="footer-content">
                                 <h4 class="iq-tw-6 iq-pb-10">Mail</h4>
-                                <p>jeetendrasahu105@gmail.com
+                                <p>jeetendrasahu@gmail.com
                                     <br>24 X 7 online support
                                     <br>
                                 </p>
@@ -1258,10 +1253,14 @@
                     </div>
                     <div class="col-md-6 col-lg-3 align-self-center">
                         <ul class="info-share">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google"></i></a></li>
-                            <li><a href="#"><i class="fa fa-github"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/jitendra-sahu-77336016a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://www.facebook.com/share/1aocTctZFK/" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://x.com/Jitendra_Sahu_9?t=Hq647-A5r8uP1sfu38xK0A&s=09" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://github.com/Jitendrasahu999" target="_blank" rel="noopener noreferrer">
+                                <i class="fa fa-github"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -1272,6 +1271,7 @@
                 </div>
             </div>
         </section>
+
         <!-- Footer Info END -->
     </footer>
     <!-- Footer END -->
@@ -1293,6 +1293,7 @@
     <!-- Google captcha code Js -->
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <!-- Custom -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="js/custom.js"></script>
 </body>
 
