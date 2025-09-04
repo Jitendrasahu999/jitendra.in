@@ -545,7 +545,7 @@ Margin Right
 /*---------------------------------------------------------------------
                            Section Title
 -----------------------------------------------------------------------*/
-.heading-title { margin-bottom: 80px; text-align: center; }
+.heading-title { margin-bottom: 40px; text-align: center; }
 .heading-title .title { position: relative; padding-bottom: 20px; margin-bottom: 25px; }
 .heading-title .title:before { content: ""; position: absolute; bottom: 0; border-radius: 4px; left: 50%; margin-left: -40px; width: 80px; height: 4px; background: #4ac4f3; }
 .heading-title p { padding: 0 80px; display: block; margin-bottom: 50px; }
