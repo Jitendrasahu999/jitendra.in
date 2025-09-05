@@ -33,7 +33,7 @@ class MyHeader extends HTMLElement {
                                     <a class="nav-link" href="#team">Team</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#blog">Blog</a>
+                                    <a class="nav-link" href="blog-list-1.html">Blog</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#contact-us">Contact</a>
@@ -157,3 +157,148 @@ class MyFooter extends HTMLElement {
 }
 
 customElements.define('my-footer', MyFooter);
+
+class BlogTags extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `<div class="iq-sidebar-widget">
+                                    <h4 class="iq-widget-title heading-left iq-tw-6">Tags</h4>
+                                    <ul class="iq-tags list-inline iq-mtb-10">
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">Artificial Intelligence</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">Machine Learning</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">Deep Learning</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">AI Tools</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">Technology</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">Tech Trends</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">Gadgets</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">Smartphones</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">Laptops</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">Web Development</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">Mobile Apps</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">Android Development</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">iOS Development</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">WordPress</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">Blogging</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">Content Creation</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">Digital Marketing</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">School ERP</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">School Management System</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">EdTech</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">E-Learning</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">Classroom Technology</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">Automation</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">Cloud Computing</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">Cybersecurity</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">IT Solutions</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">Software Development</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">Programming</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">Startups</a></li>
+                                        <li><a href="https://jeetendrasahu.in/" target="_blank">Jitendra Sahu</a></li>
+                                    </ul>
+                                </div>
+                                <div class="iq-post-author iq-mtb-20 iq-pall-30 blue-bg">
+                                    <div class="iq-post-author-pic iq-mr-25">
+                                        <img alt="#" class="rounded-circle" height="120" width="120" src="images/team/profile.png">
+                                    </div>
+                                    <div class="iq-comment-content">
+                                        <div class="iq-comment-author">
+                                            <a class="lead iq-mtb-10 iq-tw-6 iq-font-white" href="https://jeetendrasahu.in/">Jitendra Sahu</a>
+                                        </div>
+                                        <p class="iq-font-white">I’m Jitendra Sahu, a passionate Software Developer with 7+ years of experience in crafting high-performance mobile applications for both Android and iOS. I specialize in building robust, scalable, and user-friendly apps that deliver seamless experiences and meet client needs effectively. With a strong focus on innovation and continuous learning, I strive to create software solutions that not only solve problems but also inspire. Explore my work at www.jeetendrasahu.in</p>
+                                    </div>
+                                </div>
+    `
+    }
+}
+
+customElements.define('blog-tags', BlogTags);
+
+class BlogCategories extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `<div class="iq-sidebar-widget">
+                                <h4 class="iq-widget-title heading-left iq-tw-6">Categories</h4>
+                                <div class='iq-widget-menu'>
+                                    <ul>
+                                        <li><a href='#'><span>Photography</span></a></li>
+                                        <li><a href='#'><span>Nature <i class="fa fa-angle-right"></i></span></a>
+                                            <ul>
+                                                <li><a href='#'><span>Nature</span> </a></li>
+                                                <li><a href='#'><span>Measures</span></a></li>
+                                                <li><a href='#'><span>Weddings </span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href='#'><span>Advertisements <i class="fa fa-angle-right"></i></span></a>
+                                            <ul>
+                                                <li><a href='#'><span>Weddings </span></a></li>
+                                                <li><a href='#'><span>Landscape </span></a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href='#'><span>Landscape </span></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="iq-sidebar-widget">
+                                <h4 class="iq-widget-title heading-left iq-tw-6">Recent Posts</h4>
+                                <div class="iq-recent-post">
+                                    <div class="media">
+                                        <img class="mr-3" src="images/blog/06.jpg" alt="#">
+                                        <div class="media-body">
+                                            <a href="#">Proin gravida velit auctor.</a><span><i class="fa fa-calendar"></i> September 30, 2017</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="iq-recent-post">
+                                    <div class="media">
+                                        <img class="mr-3" src="images/blog/07.jpg" alt="#">
+                                        <div class="media-body">
+                                            <a href="#">Proin gravida velit auctor.</a><span><i class="fa fa-calendar"></i> September 30, 2017</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="iq-recent-post">
+                                    <div class="media">
+                                        <img class="mr-3" src="images/blog/08.jpg" alt="#">
+                                        <div class="media-body">
+                                            <a href="#">Proin gravida velit auctor.</a><span><i class="fa fa-calendar"></i> September 30, 2017</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="iq-recent-post">
+                                    <div class="media">
+                                        <img class="mr-3" src="images/blog/09.jpg" alt="#">
+                                        <div class="media-body">
+                                            <a href="#">Proin gravida velit auctor.</a><span><i class="fa fa-calendar"></i> September 30, 2017</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="iq-sidebar-widget">
+                                <h4 class="iq-widget-title heading-left iq-tw-6">Tags</h4>
+                                <ul class="iq-tags list-inline">
+                                    <li><a href="#">Bootstrap</a></li>
+                                    <li><a href="#">HTML5</a></li>
+                                    <li><a href="#">Wordpress</a></li>
+                                    <li><a href="#">CSS3</a></li>
+                                    <li><a href="#">Creative</a></li>
+                                    <li><a href="#">Multipurpose</a></li>
+                                    <li><a href="#">Bootstrap</a></li>
+                                    <li><a href="#">HTML5</a></li>
+                                    <li><a href="#">Wordpress</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="iq-sidebar-widget">
+                                <h4 class="iq-widget-title heading-left iq-tw-6">Meta</h4>
+                                <ul class="iq-widget-archives">
+                                    <li><a href="#"><i class="fa fa-angle-right"></i> Log in</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i> Entries RSS</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i> Comments RSS </a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i> September 2015</a></li>
+                                    <li><a href="#"><i class="fa fa-angle-right"></i> WordPress.org</a></li>
+                                </ul>
+                            </div>`
+    }
+}
+
+customElements.define('blog-categories', BlogCategories);
